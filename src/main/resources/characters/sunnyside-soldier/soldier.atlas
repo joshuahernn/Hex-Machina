@@ -1,0 +1,323 @@
+soldier.png
+size: 216,448
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+idle-s
+  bounds: 0,0,24,28
+  index: 0
+idle-s
+  bounds: 24,0,24,28
+  index: 1
+idle-s
+  bounds: 48,0,24,28
+  index: 2
+idle-s
+  bounds: 72,0,24,28
+  index: 3
+idle-sw
+  bounds: 0,28,24,28
+  index: 0
+idle-sw
+  bounds: 24,28,24,28
+  index: 1
+idle-sw
+  bounds: 48,28,24,28
+  index: 2
+idle-sw
+  bounds: 72,28,24,28
+  index: 3
+idle-w
+  bounds: 0,56,24,28
+  index: 0
+idle-w
+  bounds: 24,56,24,28
+  index: 1
+idle-w
+  bounds: 48,56,24,28
+  index: 2
+idle-w
+  bounds: 72,56,24,28
+  index: 3
+idle-w
+  bounds: 96,56,24,28
+  index: 4
+idle-w
+  bounds: 120,56,24,28
+  index: 5
+idle-w
+  bounds: 144,56,24,28
+  index: 6
+idle-w
+  bounds: 168,56,24,28
+  index: 7
+idle-w
+  bounds: 192,56,24,28
+  index: 8
+idle-nw
+  bounds: 0,84,24,28
+  index: 0
+idle-nw
+  bounds: 24,84,24,28
+  index: 1
+idle-nw
+  bounds: 48,84,24,28
+  index: 2
+idle-nw
+  bounds: 72,84,24,28
+  index: 3
+idle-n
+  bounds: 0,112,24,28
+  index: 0
+idle-n
+  bounds: 24,112,24,28
+  index: 1
+idle-n
+  bounds: 48,112,24,28
+  index: 2
+idle-n
+  bounds: 72,112,24,28
+  index: 3
+idle-ne
+  bounds: 0,140,24,28
+  index: 0
+idle-ne
+  bounds: 24,140,24,28
+  index: 1
+idle-ne
+  bounds: 48,140,24,28
+  index: 2
+idle-ne
+  bounds: 72,140,24,28
+  index: 3
+idle-e
+  bounds: 0,168,24,28
+  index: 0
+idle-e
+  bounds: 24,168,24,28
+  index: 1
+idle-e
+  bounds: 48,168,24,28
+  index: 2
+idle-e
+  bounds: 72,168,24,28
+  index: 3
+idle-e
+  bounds: 96,168,24,28
+  index: 4
+idle-e
+  bounds: 120,168,24,28
+  index: 5
+idle-e
+  bounds: 144,168,24,28
+  index: 6
+idle-e
+  bounds: 168,168,24,28
+  index: 7
+idle-e
+  bounds: 192,168,24,28
+  index: 8
+idle-se
+  bounds: 0,196,24,28
+  index: 0
+idle-se
+  bounds: 24,196,24,28
+  index: 1
+idle-se
+  bounds: 48,196,24,28
+  index: 2
+idle-se
+  bounds: 72,196,24,28
+  index: 3
+run-s
+  bounds: 0,224,24,28
+  index: 0
+run-s
+  bounds: 24,224,24,28
+  index: 1
+run-s
+  bounds: 48,224,24,28
+  index: 2
+run-s
+  bounds: 72,224,24,28
+  index: 3
+run-s
+  bounds: 96,224,24,28
+  index: 4
+run-s
+  bounds: 120,224,24,28
+  index: 5
+run-s
+  bounds: 144,224,24,28
+  index: 6
+run-s
+  bounds: 168,224,24,28
+  index: 7
+run-sw
+  bounds: 0,252,24,28
+  index: 0
+run-sw
+  bounds: 24,252,24,28
+  index: 1
+run-sw
+  bounds: 48,252,24,28
+  index: 2
+run-sw
+  bounds: 72,252,24,28
+  index: 3
+run-sw
+  bounds: 96,252,24,28
+  index: 4
+run-sw
+  bounds: 120,252,24,28
+  index: 5
+run-sw
+  bounds: 144,252,24,28
+  index: 6
+run-sw
+  bounds: 168,252,24,28
+  index: 7
+run-w
+  bounds: 0,280,24,28
+  index: 0
+run-w
+  bounds: 24,280,24,28
+  index: 1
+run-w
+  bounds: 48,280,24,28
+  index: 2
+run-w
+  bounds: 72,280,24,28
+  index: 3
+run-w
+  bounds: 96,280,24,28
+  index: 4
+run-w
+  bounds: 120,280,24,28
+  index: 5
+run-w
+  bounds: 144,280,24,28
+  index: 6
+run-w
+  bounds: 168,280,24,28
+  index: 7
+run-nw
+  bounds: 0,308,24,28
+  index: 0
+run-nw
+  bounds: 24,308,24,28
+  index: 1
+run-nw
+  bounds: 48,308,24,28
+  index: 2
+run-nw
+  bounds: 72,308,24,28
+  index: 3
+run-nw
+  bounds: 96,308,24,28
+  index: 4
+run-nw
+  bounds: 120,308,24,28
+  index: 5
+run-nw
+  bounds: 144,308,24,28
+  index: 6
+run-nw
+  bounds: 168,308,24,28
+  index: 7
+run-n
+  bounds: 0,336,24,28
+  index: 0
+run-n
+  bounds: 24,336,24,28
+  index: 1
+run-n
+  bounds: 48,336,24,28
+  index: 2
+run-n
+  bounds: 72,336,24,28
+  index: 3
+run-n
+  bounds: 96,336,24,28
+  index: 4
+run-n
+  bounds: 120,336,24,28
+  index: 5
+run-n
+  bounds: 144,336,24,28
+  index: 6
+run-n
+  bounds: 168,336,24,28
+  index: 7
+run-ne
+  bounds: 0,364,24,28
+  index: 0
+run-ne
+  bounds: 24,364,24,28
+  index: 1
+run-ne
+  bounds: 48,364,24,28
+  index: 2
+run-ne
+  bounds: 72,364,24,28
+  index: 3
+run-ne
+  bounds: 96,364,24,28
+  index: 4
+run-ne
+  bounds: 120,364,24,28
+  index: 5
+run-ne
+  bounds: 144,364,24,28
+  index: 6
+run-ne
+  bounds: 168,364,24,28
+  index: 7
+run-e
+  bounds: 0,392,24,28
+  index: 0
+run-e
+  bounds: 24,392,24,28
+  index: 1
+run-e
+  bounds: 48,392,24,28
+  index: 2
+run-e
+  bounds: 72,392,24,28
+  index: 3
+run-e
+  bounds: 96,392,24,28
+  index: 4
+run-e
+  bounds: 120,392,24,28
+  index: 5
+run-e
+  bounds: 144,392,24,28
+  index: 6
+run-e
+  bounds: 168,392,24,28
+  index: 7
+run-se
+  bounds: 0,420,24,28
+  index: 0
+run-se
+  bounds: 24,420,24,28
+  index: 1
+run-se
+  bounds: 48,420,24,28
+  index: 2
+run-se
+  bounds: 72,420,24,28
+  index: 3
+run-se
+  bounds: 96,420,24,28
+  index: 4
+run-se
+  bounds: 120,420,24,28
+  index: 5
+run-se
+  bounds: 144,420,24,28
+  index: 6
+run-se
+  bounds: 168,420,24,28
+  index: 7

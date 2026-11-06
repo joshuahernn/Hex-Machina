@@ -1,4 +1,4 @@
-# Untitled Co-op Roguelike
+# Hex Machina
 
 A pixel-art action roguelike designed for three-player co-op, combining maze-like exploration, randomized loot, and challenging combat against robotic enemies.
 

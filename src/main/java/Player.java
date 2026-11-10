@@ -1,6 +1,8 @@
 // Each player sprite frame is 24 pixels wide by 28 pixels tall. At 6x scale, it draws at 144 x 168 pixels.
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.graphics.Cursor;
+import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
@@ -24,6 +26,7 @@ public class Player {
     };
 
     private final TextureAtlas atlas;
+    private final Cursor customCursor;
     private final Map<String, Array<TextureAtlas.AtlasRegion>> idleFrames = new HashMap<>();
     private final Map<String, Array<TextureAtlas.AtlasRegion>> runFrames = new HashMap<>();
     private final int upKey, downKey, leftKey, rightKey;
@@ -61,6 +64,13 @@ public class Player {
         float maxY = Math.max(0f, Gdx.graphics.getHeight() - drawHeight);
         x = MathUtils.clamp(maxX / 2 + startOffset, 0, maxX);
         y = maxY / 2;
+
+        // crosshair
+        Pixmap pixmap = new Pixmap(Gdx.files.internal("ui/crosshair.png"));
+        int xHotspot = pixmap.getWidth() / 2;
+        int yHotspot = pixmap.getHeight() / 2;
+        customCursor = Gdx.graphics.newCursor(pixmap, xHotspot, yHotspot);
+        pixmap.dispose();
     }
 
     private int held(int key) {
@@ -88,6 +98,75 @@ public class Player {
         x = nextX;
         y = nextY;
 
+        // mouse1 aiming
+        boolean aiming = Gdx.input.isButtonPressed(Input.Buttons.LEFT);
+        if (aiming) {
+            Gdx.graphics.setCursor(customCursor);
+
+            float centerX = x + drawWidth / 2f;
+            float centerY = y + drawHeight / 2f;
+
+            float mouseX = Gdx.input.getX();
+            float mouseY = Gdx.graphics.getHeight() - Gdx.input.getY();
+
+            /*
+            * 360 / 8 = 45 degrees per direction.
+            * Each direction extends 22.5 degrees either side of its center.
+            *
+            * Facing | Center | Angle range
+            * E      |    0   | -22.5 <= angle < 22.5
+            * NE     |   45   |  22.5 <= angle < 67.5
+            * N      |   90   |  67.5 <= angle < 112.5
+            * NW     |  135   | 112.5 <= angle < 157.5
+            * W      | +/-180 | angle >= 157.5 OR angle < -157.5
+            * SW     | -135   | -157.5 <= angle < -112.5
+            * S      |  -90   | -112.5 <= angle < -67.5
+            * SE     |  -45   | -67.5 <= angle < -22.5
+            */
+
+
+            float aimX = mouseX - centerX;
+            float aimY = mouseY - centerY;
+
+            float angle = MathUtils.atan2(aimY, aimX) * MathUtils.radiansToDegrees; // we need to use an angle to take in both distances into account
+
+
+            if (angle >= -22.5f && angle < 22.5f) {
+                facing = "e";
+            }
+
+            if (angle >= 22.5f && angle < 67.5f) {
+                facing = "ne";
+            }
+
+            if (angle >= 67.5f && angle < 112.5f) {
+                facing = "n";
+            }
+
+            if (angle >= 112.5f && angle < 157.5f) {
+                facing = "nw";
+            }
+
+            if (angle >= 157.5f || angle < -157.5f) {
+                facing = "w";
+            }
+
+            if (angle >= -157.5f && angle < -112.5f) {
+                facing = "sw";
+            }
+
+            if (angle >= -112.5f && angle < -67.5f) {
+                facing = "s";
+            }
+
+            if (angle >= -67.5f && angle < -22.5f) {
+                facing = "se";
+            }
+        } else {
+            Gdx.graphics.setSystemCursor(Cursor.SystemCursor.Arrow);
+        }
+
+
         // Select the run or idle frames for the direction the player is facing.
         Array<TextureAtlas.AtlasRegion> nextFrames = moving ? runFrames.get(facing) : idleFrames.get(facing);
         if (frames != nextFrames) {
@@ -108,6 +187,8 @@ public class Player {
     }
 
     public void dispose() {
+        Gdx.graphics.setSystemCursor(Cursor.SystemCursor.Arrow);
+        customCursor.dispose();
         atlas.dispose();
     }
 }

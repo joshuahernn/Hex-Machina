@@ -10,6 +10,7 @@ public class Main extends ApplicationAdapter {
     private SpriteBatch batch;
     private TileMap tileMap;
     private MapCamera mapCamera;
+    private GameWorld world;
     private Hero player;
 
 
@@ -25,7 +26,8 @@ public class Main extends ApplicationAdapter {
         batch = new SpriteBatch();
         tileMap = new TileMap("maps/level1.txt");
         mapCamera = new MapCamera();
-        player = new Hero(HeroClass.KNIGHT, tileMap, tileMap.getPlayerSpawns().get(0));
+        world = new GameWorld(tileMap);
+        player = new Hero(HeroClass.KNIGHT, tileMap, world, tileMap.getPlayerSpawns().get(0));
     }
 
     @Override
@@ -34,12 +36,15 @@ public class Main extends ApplicationAdapter {
         if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)) Gdx.app.exit();
         if (Gdx.input.isKeyJustPressed(Input.Keys.G)) tileMap.openNextGate(); // temporary, until bosses drop keys
 
+        world.update(Gdx.graphics.getDeltaTime());
         player.update(Gdx.graphics.getDeltaTime(), mapCamera.camera);
         mapCamera.follow(player.getX(), player.getY(), tileMap);
         batch.setProjectionMatrix(mapCamera.camera.combined);
         batch.begin();
         tileMap.draw(batch, mapCamera.camera, row -> {
+            world.drawRowFloor(batch, row);
             if (player.getRow() == row) player.draw(batch);
+            world.drawRowAir(batch, row);
         });
         batch.end();
     }
@@ -47,6 +52,7 @@ public class Main extends ApplicationAdapter {
     @Override
     public void dispose() {
         player.dispose();
+        world.dispose();
         tileMap.dispose();
         batch.dispose();
     }

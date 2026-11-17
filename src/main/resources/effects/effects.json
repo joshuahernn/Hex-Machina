@@ -1,0 +1,372 @@
+{
+  "slash_light": {
+    "frameWidth": 136,
+    "frameHeight": 104,
+    "columns": 4,
+    "frames": 16,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 92
+  },
+  "slash_cross": {
+    "frameWidth": 164,
+    "frameHeight": 108,
+    "columns": 4,
+    "frames": 17,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 92
+  },
+  "slash_hex": {
+    "frameWidth": 136,
+    "frameHeight": 104,
+    "columns": 4,
+    "frames": 16,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 92
+  },
+  "slash_hex_heavy": {
+    "frameWidth": 164,
+    "frameHeight": 108,
+    "columns": 4,
+    "frames": 17,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 92
+  },
+  "slash_machina": {
+    "frameWidth": 136,
+    "frameHeight": 104,
+    "columns": 4,
+    "frames": 16,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 92
+  },
+  "slash_machina_heavy": {
+    "frameWidth": 148,
+    "frameHeight": 104,
+    "columns": 4,
+    "frames": 20,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 36,
+    "pivotY": 86
+  },
+  "spark_steel": {
+    "frameWidth": 136,
+    "frameHeight": 80,
+    "columns": 3,
+    "frames": 11,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 64
+  },
+  "burst_cyan": {
+    "frameWidth": 136,
+    "frameHeight": 80,
+    "columns": 3,
+    "frames": 11,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 64
+  },
+  "burst_magenta": {
+    "frameWidth": 136,
+    "frameHeight": 80,
+    "columns": 3,
+    "frames": 11,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 64
+  },
+  "burst_red": {
+    "frameWidth": 136,
+    "frameHeight": 80,
+    "columns": 3,
+    "frames": 11,
+    "fps": 20,
+    "loop": false,
+    "pivotX": 44,
+    "pivotY": 64
+  },
+  "bolt_cyan": {
+    "frameWidth": 144,
+    "frameHeight": 60,
+    "columns": 3,
+    "frames": 16,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 108,
+    "pivotY": 30
+  },
+  "disc_cyan": {
+    "frameWidth": 120,
+    "frameHeight": 52,
+    "columns": 3,
+    "frames": 10,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 92,
+    "pivotY": 26
+  },
+  "dart_magenta": {
+    "frameWidth": 128,
+    "frameHeight": 32,
+    "columns": 2,
+    "frames": 10,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 108,
+    "pivotY": 16
+  },
+  "slug_red": {
+    "frameWidth": 200,
+    "frameHeight": 40,
+    "columns": 2,
+    "frames": 12,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 184,
+    "pivotY": 18
+  },
+  "charge": {
+    "frameWidth": 120,
+    "frameHeight": 86,
+    "columns": 5,
+    "frames": 32,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 44,
+    "pivotY": 80
+  },
+  "charge_magenta": {
+    "frameWidth": 120,
+    "frameHeight": 86,
+    "columns": 5,
+    "frames": 32,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 44,
+    "pivotY": 80
+  },
+  "charge_red": {
+    "frameWidth": 120,
+    "frameHeight": 86,
+    "columns": 5,
+    "frames": 32,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 44,
+    "pivotY": 80
+  },
+  "arrow_charged": {
+    "frameWidth": 24,
+    "frameHeight": 9,
+    "columns": 4,
+    "frames": 4,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 21,
+    "pivotY": 4
+  },
+  "arrow_hex_charged": {
+    "frameWidth": 24,
+    "frameHeight": 9,
+    "columns": 4,
+    "frames": 4,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 21,
+    "pivotY": 4
+  },
+  "arrow_machina_charged": {
+    "frameWidth": 24,
+    "frameHeight": 9,
+    "columns": 4,
+    "frames": 4,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 21,
+    "pivotY": 4
+  },
+  "edge_steel": {
+    "frameWidth": 30,
+    "frameHeight": 15,
+    "columns": 12,
+    "frames": 12,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 2,
+    "pivotY": 7
+  },
+  "edge_cyan": {
+    "frameWidth": 30,
+    "frameHeight": 15,
+    "columns": 12,
+    "frames": 12,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 2,
+    "pivotY": 7
+  },
+  "edge_red": {
+    "frameWidth": 30,
+    "frameHeight": 15,
+    "columns": 12,
+    "frames": 12,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 2,
+    "pivotY": 7
+  },
+  "crystal_magenta": {
+    "frameWidth": 44,
+    "frameHeight": 23,
+    "columns": 8,
+    "frames": 8,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 32,
+    "pivotY": 11
+  },
+  "core_red": {
+    "frameWidth": 50,
+    "frameHeight": 25,
+    "columns": 8,
+    "frames": 8,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 37,
+    "pivotY": 12
+  },
+  "punch_light": {
+    "frameWidth": 17,
+    "frameHeight": 17,
+    "columns": 5,
+    "frames": 5,
+    "fps": 24,
+    "loop": false,
+    "pivotX": 8,
+    "pivotY": 8
+  },
+  "punch_heavy": {
+    "frameWidth": 27,
+    "frameHeight": 27,
+    "columns": 7,
+    "frames": 7,
+    "fps": 24,
+    "loop": false,
+    "pivotX": 13,
+    "pivotY": 13
+  },
+  "ready_ember": {
+    "frameWidth": 29,
+    "frameHeight": 29,
+    "columns": 6,
+    "frames": 6,
+    "fps": 30,
+    "loop": false,
+    "pivotX": 14,
+    "pivotY": 14
+  },
+  "ready_cyan": {
+    "frameWidth": 29,
+    "frameHeight": 29,
+    "columns": 6,
+    "frames": 6,
+    "fps": 30,
+    "loop": false,
+    "pivotX": 14,
+    "pivotY": 14
+  },
+  "ready_magenta": {
+    "frameWidth": 29,
+    "frameHeight": 29,
+    "columns": 6,
+    "frames": 6,
+    "fps": 30,
+    "loop": false,
+    "pivotX": 14,
+    "pivotY": 14
+  },
+  "ready_red": {
+    "frameWidth": 29,
+    "frameHeight": 29,
+    "columns": 6,
+    "frames": 6,
+    "fps": 30,
+    "loop": false,
+    "pivotX": 14,
+    "pivotY": 14
+  },
+  "trail_ember": {
+    "frameWidth": 38,
+    "frameHeight": 7,
+    "columns": 6,
+    "frames": 6,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 37,
+    "pivotY": 3
+  },
+  "trail_cyan": {
+    "frameWidth": 38,
+    "frameHeight": 7,
+    "columns": 6,
+    "frames": 6,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 37,
+    "pivotY": 3
+  },
+  "trail_red": {
+    "frameWidth": 38,
+    "frameHeight": 7,
+    "columns": 6,
+    "frames": 6,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 37,
+    "pivotY": 3
+  },
+  "draw_ember": {
+    "frameWidth": 33,
+    "frameHeight": 33,
+    "columns": 10,
+    "frames": 10,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 16,
+    "pivotY": 16
+  },
+  "draw_cyan": {
+    "frameWidth": 33,
+    "frameHeight": 33,
+    "columns": 10,
+    "frames": 10,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 16,
+    "pivotY": 16
+  },
+  "draw_red": {
+    "frameWidth": 33,
+    "frameHeight": 33,
+    "columns": 10,
+    "frames": 10,
+    "fps": 20,
+    "loop": true,
+    "pivotX": 16,
+    "pivotY": 16
+  }
+}
